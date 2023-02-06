@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1d242e;
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #3e4550;
+}
+
+.navbar h2 {
+  margin-left: 3rem;
+  font-size: 3rem;
+}
+
+.mainContainer {
+  margin-top: 5rem;
+}
+
+.inputField {
+  width: 48rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+#inputTask {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.3rem;
+  outline: none;
+  color: black;
+}
+
+#addTask {
+  height: 100%;
+  margin-left: 8px;
+  background-color: rgb(34, 185, 255);
+  outline: none;
+  border: none;
+  padding: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.fa-plus {
+  font-size: 2rem;
+  color: white;
+}
+
+.allTaskBox {
+  width: 48rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.taskBox {
+  width: 48rem;
+  height: 5rem;
+  background: white;
+  display: flex;
+  align-items: center;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.taskBox p {
+  width: 40rem;
+  color: black;
+  font-size: 1.8rem;
+  padding-left: 1rem;
+}
+
+.btns {
+  height: 4rem;
+  display: flex;
+}
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 100%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.324);
+}
+
+.fa-trash,
+.fa-pen {
+  font-size: 1.8rem;
+  color: white;
+}
+
+#delBtn {
+  background-color: rgb(255, 11, 11);
+}
+
+#editBtn {
+  margin: 0 0.8rem;
+  background-color: rgb(255, 188, 43);
+}
+
+@media only screen and (max-width: 520px) {
+  .inputField {
+    width: 38rem;
+  }
+  .allTaskBox {
+    width: 338rem;
+  }
+  .taskBox {
+    width: 38rem;
+  }
+  .taskBox p {
+    width: 30rem;
+  }
+}
